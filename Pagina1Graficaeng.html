@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<head>
+<html>
+<title>Ulisse.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-green.css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-times.min.css">
+</head>
+<body>
+
+
+
+<!-- Header -->
+<header class="w3-container w3-theme w3-padding" id="MioTitolo">
+  <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-opennav"></i>
+  <div class="w3-center">
+  <h6>University of Pisa</h>
+  <h4>3D Graphics for Cultural Heritage</h4>
+  <h1 class="w3-xxxlarge w3-animate-bottom">Statue of Ulisse Dini</h1>
+    <div class="w3-padding-32">
+      <button class="w3-btn w3-xlarge w3-light-green w3-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">Presentation</button>
+<button class="w3-btn w3-xlarge w3-light-green w3-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">Metodology</button>
+<button class="w3-btn w3-xlarge w3-light-green w3-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">3D Model</button>
+    </div>
+  </div>
+</header>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-8 w3-animate-top">
+      <header class="w3-container w3-theme-l1">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn">×</span>
+        <
+      </header>
+      
+      
+        <p> <a class="w3-btn" href="C:\Users\Eleonora\Desktop\Esame\sito\Presentazione.html"> Presentation</a></p>
+		 <p> <a class="w3-btn" href="C:\Users\Eleonora\Desktop\Esame\sito\metodologia2.html"> Metodology</a></p>
+		  <p> <a class="w3-btn" href="C:\Users\Eleonora\Desktop\Esame\3Dhop\3DHOP_4.0\examples\prova3.html"> 3D Model</a></p>
+      
+      <footer class="w3-container w3-theme-l1">
+        
+      </footer>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-center w3-margin-top">
+<div class="w3-third">
+  <div class="w3-card-2 w3-padding-top" style="min-height:460px">
+  <h4>Presentation</h4><br>
+  <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+  <p>Statue of Ulisse Dini</p>
+  <p>Who was Ulisse Dini?</p>
+  <p>Why it's important to re-create a 3D model </p>
+  
+  </div>
+</div>
+
+<div class="w3-third">
+  <div class="w3-card-2 w3-padding-top" style="min-height:460px">
+  <h4>Metodology</h4><br>
+  <i class="fa fa-css3 w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+  <p>Tools used</p>
+  <p>Tutorial 3D model</p>
+  
+  </div>
+</div>
+
+<div class="w3-third">
+  <div class="w3-card-2 w3-padding-top" style="min-height:460px">
+  <h4>3D Model</h4><br>
+  <i class="fa fa-diamond w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+  <p>3D Model </p>
+  
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="w3-container w3-center">
+  <hr>
+  <h3>Ulisse Dini</h3>
+</div>
+
+<div class="w3-row-padding">
+
+<div class="w3-third">
+<div class="Ulisse Dini">
+  <img src="http://i65.tinypic.com/14vhi0x.jpg" alt="Car" style="width:100%">
+  <div class="w3-container">
+  <p>Ulisse Dini</p>
+  </div>
+</div>
+</div>
+
+<div class="w3-third">
+<div class="Dettaglio">
+  <img src="http://i65.tinypic.com/309kfab.jpg" alt="Car" style="width:100%">
+  <div class="w3-container">
+  <p>Detail</p>
+  </div>
+</div>
+</div>
+
+<div class="w3-third">
+<div class="Davanti">
+  <img src="http://i64.tinypic.com/xor5gn.jpg" alt="Car" style="width:100%">
+  <div class="w3-container">
+  <p>Medium-long shot</p>
+  </div>
+</div>
+</div>
+</div>
+
+
+  
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-dark w3-padding-16">
+  <h3>Footer</h3>
+  <p>Powered by Eleonora Zedda</p>
+  <p> ID number: 541480</p>
+  <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-theme-light w3-padding">Go To Top</span> 
+    <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+  <p>Site developed for: 3D Graphics for Cultural Heritage.<a href="http://vcg.isti.cnr.it/corsi/G3D_InfoUma/" class="w3-btn w3-theme-light" target="_blank">3D Graphics</a></p>
+</footer>
+
+<!-- Script for Sidenav, Tabs, Accordions, Progress bars and slideshows -->
+<script>
+// Side navigation
+function w3_open() {
+    var x = document.getElementById("mySidenav");
+    x.style.width = "100%";
+    x.style.textAlign = "center";
+    x.style.fontSize = "50px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+}
+
+// Tabs
+function openCity(evt, cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  var activebtn = document.getElementsByClassName("testbtn");
+  for (i = 0; i < x.length; i++) {
+      activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-dark-grey";
+}
+
+var mybtn = document.getElementsByClassName("testbtn")[0];
+mybtn.click();
+
+// Accordions
+function myAccFunc(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-dark-grey";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+        x.previousElementSibling.className =
+        x.previousElementSibling.className.replace(" w3-dark-grey", "");
+    }
+}
+
+// Slideshows
+var slideIndex = 1;
+
+function plusDivs(n) {
+slideIndex = slideIndex + n;
+showDivs(slideIndex);
+}
+
+function showDivs(n) {
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+
+showDivs(1);
+
+// Progress Bars
+function move() {
+  var elem = document.getElementById("myBar");
+  var width = 1;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width == 100) {
+      clearInterval(id);
+    } else {
+      width++;
+      elem.style.width = width + '%';
+      document.getElementById("demoprgr").innerHTML = width * 1  + '%';
+    }
+  }
+}
+</script>
+
+</body>
+</html>

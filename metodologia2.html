@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<title>Metodology.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-green.css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-times.min.css">
+<body>
+
+
+
+<!-- Header -->
+<header class="w3-container w3-theme w3-padding" id="myHeader">
+  <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-opennav"></i>
+  <div class="w3-center">
+  <h4>University of Pisa</h4>
+  <h3>3D Graphics for Cultural Heritage</h3>
+  <h4>Statue of Ulisse Dini</h4>
+ 
+    
+  </div>
+</header>
+
+<h2><b> <p align="center"> Metodology</b></h2></p>
+
+</div>
+<div class="w3.left">
+  <div style='margin:15px; padding:10px; background-color:#C2F2E3'><h2>Tools Used</h2>
+  <p>To re-create the Statue of Ulisse Dini, I used some tools: <ul type="circle">
+<li>XnView</li>
+<li>Visual SFM</li>
+<li>Meshlab</li>
+<li>Blender</li>
+<hr><br><img style="FLOAT: center; alt="src="http://i66.tinypic.com/2a4ycuv.png"  width="150" height="150" align=”center” vspace=”300″ hspace=”20″>
+  <img style="FLOAT: center; alt=" src="http://i66.tinypic.com/1zvstwx.png"  width="" height="96" align=”center” vspace=”300″ hspace=”20″>
+<img style="FLOAT: center; alt=" src="http://i63.tinypic.com/6r21jq.png"  width="190" height="100" align=”center” vspace=”20″ hspace=”20″>
+  <img style="FLOAT: center; alt="src="http://i65.tinypic.com/2vlmqki.png"  width="150" height="150" align=”center” vspace=”300″ hspace=”20″>
+<hr>
+</ul>
+
+  <br><h3><b>Acquisition</b></h3>
+
+
+<img style="FLOAT: right; alt="" src=http://i68.tinypic.com/w89apu.jpg"><p ALIGN="JUSTIFY">The 3D model has been realized taking a lot of photos on field; in order to catch all the details or features of the statue.
+The camera used to takes the photos is a Canon EOS 600D equipped with a Canon EFS 18-55mm.
+In order to have enought photo to recreate the 3D model I had to make 2 shoot.
+I've been taking photo for 2 hours for each shoot. Furthermore, has been used for the shoot a ladder. After the Acquisition the photos has been downloded into the PC.</p><br><br>
+<img style="FLOAT: center; alt="" src=http://i65.tinypic.com/2l9jc5z.jpg" width="200" height="300" vspace=”10″ hspace=”10″>
+
+<P ALIGN="JUSTIFY">To take the photos I used a Canon, a ladder and a lot of patient.
+After that I downloded the photo into the pc. And I lanched Visual SFM.</p> 
+<hr>
+
+<img style="FLOAT: left; alt="" src=http://i63.tinypic.com/bfkx7m.jpg" width="560" height="383" vspace=”10″ hspace=”10″>
+<br><br><h3><b> XnView</b></h3><P ALIGN="JUSTIFY">After the Acquisition, the photo has been checked. I noticed that the quality of the photos are too high. If I lanched the program using pictures with so hight resolution VisualSFM probably would crash in a second. In order to avoid this bug I change the resolution of the photos from 5184x3456 to 3000x2000.
+Before has been lanched Visual SFM, the photos that could create problems to the software has been descarted. For example the photo that has been descrated are the blurry photos or the photos with no focus.</p>
+<br><br>
+<br>
+<br><br><br><br>
+<hr>
+<h3><b>Visual SFM</b></h3>
+<P ALIGN="JUSTIFY">The photos then are loaded in Visual SFM. In total 200 photos were loaded.
+After that, apply the Compute Missing Matched that extrapolate the photos's feature and create a match between every single photos.
+</p>
+<br><img src="http://i67.tinypic.com/1j47pk.jpg"   align=”center” vspace=”20″ hspace=”20″>
+
+<hr>
+<h4><b> Compute 3D Reconstruction</b> </h4>
+<P ALIGN="JUSTIFY">Visual SFM has found the match beetween the photos, now using this procedure can create a 3D reconstruction of the scene. This procedure extrapolate informations from the match that has found in the Compute Missing Matched and estrapolate some information like: calibration, orientation and position in space of the camera.</p>
+
+<img src="http://i65.tinypic.com/2ntcz8m.jpg"   align=”center” width=”500″ height=”200″ vspace=”20″ hspace=”20″>
+<br>
+<hr>
+<h4><b>Dense Model</b></h4>
+<P ALIGN="JUSTIFY">After the "Compute 3D Reconstruction", the final step is: Dense Reconstruction. It's take 4 hours to have a dense clouds point reconstruction. This procedure create a dense point cloud. Visual SFM has created 5 cloud for the statue. The dense cloud point obtained from Visual SFM are too "dirty" so it's necessary to clean the dense reconstruction. Prior to that, the 5 dense reconstruction has been loaded at the same time into the program in order to have a complete dense model. For merge the 5 dense reconstruction in meshlab I used the filter called "Flatte Visible Layer"</p>
+<h2 class="w3-center">Slideshows</h2>
+<div class="w3-content" style="max-width:800px;position:relative">
+
+<img class="mySlides w3-animate-opacity" src="http://i68.tinypic.com/2j3ml41.jpg" style="width:100%">
+<img class="mySlides w3-animate-opacity" src="http://i64.tinypic.com/ajnorn.jpg" style="width:100%">
+<img class="mySlides w3-animate-opacity" src="http://i68.tinypic.com/13zd9wy.jpg" style="width:100%">
+
+
+<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;left:0;" onclick="plusDivs(-1)"><</a>
+<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;right:0;" onclick="plusDivs(+1)"> ></a>
+</div>
+
+<hr>
+<h3><b>Poisson Reconstruction</b></h3>
+<P ALIGN="JUSTIFY">After that the statue has been cleaned, in order to create a uniform surface I apply the filter that's is called "Reconstruction: Poisson" using for the parameter "Octree Depth" and "Solver Divider" the same value: 12 in order to mantein the highter level of detail.</p>
+
+<br><img src="http://i64.tinypic.com/15ro6d1.jpg"  width="900" height="400" align=”center” vspace=”20″ hspace=”20″>
+
+<hr>
+<img style="FLOAT: right; alt="" src=http://i63.tinypic.com/30rmm8i.jpg" width="800" height="400" align=”center” vspace=”20″ hspace=”20″>
+<br>
+
+<br><h4><b> Manupulator Tools and Scale</b></h4>
+<br><P ALIGN="JUSTIFY">Then I edited the orientation of the statue using the "Manipulator Tool", using this tool I can fixed the orientetion of the model in the axis x,y,z. Using the Transform: Scale, I scaled the 3D Model, so the model have a real unit of measurement.</p>
+
+
+
+
+
+
+<br>
+<br>
+<br><br>
+
+<br> <br>
+
+<br>
+<br>
+
+<hr>
+<img style="FLOAT: left; alt="" src=http://i65.tinypic.com/2qn19w6.jpg" width="800" height="400" align=”center” vspace=”20″ hspace=”20″>
+
+<br><h4><b>Smoothing with Meshlab and Blender</b></h4>
+<br><P ALIGN="JUSTIFY">After that the model that I've got is a model with a lot of impurities so I used a tools that it's is in meshlab that it's called "smooth". Using this tools I "clean" all the impurities of the statue. Another tools used is the sculptur mode in Blender: using the sculpture brush I can smooth all the impurities.</p>
+
+
+
+
+
+
+
+<br>
+<br>
+
+
+<br>
+
+<br> <br>
+
+<br>
+
+
+<br>
+
+<hr>
+<img style="FLOAT: left; alt="" src=http://i64.tinypic.com/2u74nyr.jpg" width="800" height="400" align=”center” vspace=”20″ hspace=”20″>
+<br>
+<br>
+<br>
+
+<br>
+<br><h3><b>Color </b></h3>
+<P ALIGN="JUSTIFY">After that in order to transert the color form a original dense cloud point to the poisson model, has been used another tools in meshlab that is called "Vertex Attribute Transfer." </p>
+
+
+
+
+
+
+<br>
+<br>
+
+<br>
+
+<br>
+
+
+<br> 
+
+<br>
+<br><P ALIGN="JUSTIFY">
+ This is the resultant model afetr apply the vertex attribute transfer.</p>
+<img style="FLOAT: center; alt="" src=http://i65.tinypic.com/2h6a5x3.jpg" width="800" height="400" align=”center” vspace=”20″ hspace=”20″>
+
+<hr>
+<hr>
+<hr>
+<h3> <b> Some problems...</b></h3>
+
+<br>
+
+<img style="FLOAT: left; alt="" src=http://i65.tinypic.com/20accb4.jpg" width="600" height="400" align=”center” vspace=”20″ hspace=”20″>
+<br>
+<br>
+<br>
+
+<P ALIGN="JUSTIFY">I met some problem during all the process.The first problem that I met was during the Poisson transform, becouse I have in the mesh some hole that I can't fill so I decided to try some way to cover up the hole. </p>
+</p>
+
+<br>
+
+<br>
+
+<br>
+
+
+<br>
+
+<br>
+<br> <br>
+
+
+
+
+<br>
+
+
+
+<br>
+<br>
+<br>
+<P ALIGN="JUSTIFY">The first attempt was to mesh the hole of the base with a parallelepiped create with blender.</p>
+<img style="FLOAT:center ; alt=" src="http://i63.tinypic.com/2nba6xi.jpg" width="500" height="300" align=”center” vspace=”20″ hspace=”20″>
+
+
+<P ALIGN="JUSTIFY">This attempt fails, so I decide to take a different approach: I went back to work in the clouds point and I clean all. After that I apply the Poisson Transformation.</p>
+<img style="FLOAT:center ; alt=" src="http://i63.tinypic.com/j8iflj.jpg" width="500" height="400" align=”center” vspace=”20″ hspace=”20″>
+
+<P ALIGN="JUSTIFY">To smooth all this "swelling" I used the sculpt mode in blender.</p>
+<img style="FLOAT:center ; alt=" src="http://i64.tinypic.com/2cwpkjt.jpg" width="500" height="400" align=”center” vspace=”20″ hspace=”20″>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+<br>
+
+
+
+<br>
+<br><br>
+</div></div>
+
+<ul class="w3-navbar w3-theme">
+  <li><a class="w3-dark-grey w3-padding-16" href="C:\Users\Eleonora\Desktop\Esame\sito\Pagina1Graficaeng.html">Home</a></li>
+  <li><a class="w3-padding-16" href="C:\Users\Eleonora\Desktop\Esame\sito\presentazione.html">Presentation</a></li>
+  <li><a class="w3-padding-16" href="C:\Users\Eleonora\Desktop\Esame\3Dhop\3DHOP_4.0\examples\prova3.html">3D Model</a></li>
+  <li class="w3-dropdown-hover">
+    
+  </li>
+  <li class="w3-right"><a class="w3-padding-16" href="javascript:void(0)"><i class="fa fa-search"></i></a></li>
+</ul>
+
+
+
+
+
+
+<!-- Footer -->
+<br>
+<footer class="w3-container w3-theme-dark w3-padding-16">
+  <h3>Footer</h3>
+  <p>Powered by Eleonora Zedda </p>
+  <p> ID number: 541480 </p>
+  <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-theme-light w3-padding">Go To Top</span> 
+    <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+  <p>Site developed for: 3D Graphics for Cultural Heritage.<a href="http://vcg.isti.cnr.it/corsi/G3D_InfoUma/" class="w3-btn w3-theme-light" target="_blank">3D Graphics</a></p>
+</footer>
+
+<script>
+// Slideshows
+var slideIndex = 1;
+
+function plusDivs(n) {
+slideIndex = slideIndex + n;
+showDivs(slideIndex);
+}
+
+function showDivs(n) {
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+
+showDivs(1);
+</script>
+</body>
+</html>
